@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+nav a {
+    color: rgb(236, 24, 208);
+    text-decoration: none;
+    display: inline-block;
+}
+
+header {
+    background: black;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, black, black);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, black, black);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.contain {
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.textos {
+    color: #fff;
+    width: 50%;
+}
+
+.textos h1 {
+    font-size: 80px;
+}
+
+.textos h2 {
+    font-size: 30px;
+}
+
+.textos a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.img {
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    justify-content: space-around;
+    width: auto;
+}
+
+.wave {
+    height: 100px;
+    width: 100%;
+    background: black;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, black, black);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, black, black);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

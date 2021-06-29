@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(0, 0, 0)
 }
 
 nav {
@@ -15,17 +16,18 @@ nav {
 }
 
 nav a {
-    color: rgb(236, 24, 208);
+    color: #fff;
     text-decoration: none;
     display: inline-block;
+    animation: moverizq 1s ease-in;
 }
 
 header {
-    background: black;
+    background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, black, black);
+    background: -webkit-linear-gradient(to right, #434343, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, black, black);
+    background: linear-gradient(to right, #434343, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: auto;
     padding: 48px;
@@ -34,23 +36,27 @@ header {
 
 .contain {
     width: 95%;
-    max-width: 1200px;
+    max-width: 2100px;
     display: flex;
     align-items: center;
     margin: auto;
+    margin-bottom: 200px;
 }
 
 .textos {
     color: #fff;
     width: 50%;
+    display: inline-block;
 }
 
 .textos h1 {
     font-size: 80px;
+    animation: moverder 1.25s ease-in;
 }
 
 .textos h2 {
-    font-size: 30px;
+    font-size: 40px;
+    animation: moverizq 1s ease-in;
 }
 
 .textos a {
@@ -62,24 +68,59 @@ header {
     border: 1px solid #fff;
     border-radius: 3px;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px 10px 20px;
+    animation: moverder 1.25s ease-in;
 }
 
-.img {
+.img1 {
     display: block;
     height: 450px;
     object-fit: cover;
     justify-content: space-around;
-    width: auto;
+    width: 20%;
+    animation: moverarriba 1s ease-in;
 }
 
 .wave {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100px;
     width: 100%;
-    background: black;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, black, black);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, black, black);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@keyframes moverizq {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverder {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverarriba {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
